@@ -1,0 +1,196 @@
+/*  common start  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/*  common ends*/
+
+/* navbar start  */
+
+
+nav{
+    
+    height: 60px;
+    text-align: center;    
+background: #ee9ca7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #e3969f, #b36f78);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    margin-bottom: 30px;
+    position: relative;
+
+}
+img{
+    width: 130px;
+    left: 30px;
+    top: 8px;
+    position: absolute;
+    display: inline-block;
+    transition: 0.5s;
+    
+    
+}
+.img{
+    width: 130px;
+    left: 30px;
+    top: 8px;
+    position: absolute;
+    display: inline-block;
+    transition: 0.5s;
+    
+    
+}
+img:hover{
+    width:160px ;
+}
+
+.button{
+    display: inline-block;
+    width: 190px;
+    font-size: 21px;
+    position: absolute;
+    padding: 12px;
+    margin-top: 5px;    
+    right: 20px;
+    background-color: #0e0607;
+    background-image: linear-gradient(to right, red, rgb(240, 85, 85),rgb(235, 105, 105));
+    color: white;
+    border-radius: 15px;
+}
+.button:hover{
+    font-size: 22px;
+    width: auto;
+    height: auto;
+    color: black;
+}
+
+nav ul li  {
+    display: inline-block;
+    margin-top: 5px;
+    
+
+}
+nav ul li a{
+    color: black;
+    font-size: 22px;
+    position:relative;
+    display: block;    
+    padding: 10px 15px 15px 15px ;
+    transition: 0.5s;
+    z-index: 1;
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    z-index: -1; 
+    
+
+background: #ee9ca7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+    
+    
+    
+    padding: -10px 0;
+    transition: 0.2s;
+    left: 0;
+    bottom:  0;
+
+    border-radius: 8px 0px 0px 8px;
+}
+nav ul li:hover a::after{
+    width: 50%;    
+    
+
+}
+
+
+nav ul li a::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    border-radius: 0 8px 8px 0;
+
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right #ee9ca7, #ffdde1,);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ee9ca7, #ffdde1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+    
+
+    
+    position: absolute;
+    z-index: -1;
+    transition: 0.2s;
+    top: 0;
+    right: 0;
+
+
+}
+nav ul li:hover a::before{
+    width:50%;
+    color: white;
+    
+    
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+
+
+
+/* navbar ends */
+
+
+.slide a::after{
+    width: 0%;
+    height: 15%;
+    transition: 0.2s;
+    z-index: -1;
+    position: absolute;
+    background: #C6FFDD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 8px;
+
+
+}
+.slide:hover a::after{
+    width: 100%;
+
+}
+ .slide ::before{
+    width: 0%;
+    height: 15%;
+    transition: 0.5s;
+    z-index: -1;
+    position: absolute;
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FBD786, #C6FFDD, #f7797d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 8px;
+    
+
+ }
+
+ .slide:hover a::before{
+    width: 100%;
+ }
+
